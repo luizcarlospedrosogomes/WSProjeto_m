@@ -1,0 +1,13 @@
+objeto\Representante.class
+objeto\Promocao.class
+ws\ClienteWS.class
+controle\teste.class
+modelo\Conexao.class
+modelo\ClienteBD.class
+controle\ClienteC.class
+objeto\Premio.class
+ws\RepresentanteWS.class
+controle\RepresentanteC.class
+ws\ApplicationConfig.class
+objeto\Cliente.class
+modelo\RepresentanteBD.class
