@@ -3,10 +3,6 @@ package ws;
 import controle.ClienteC;
 import io.swagger.annotations.Api;
 import io.swagger.jaxrs.config.BeanConfig;
-import io.swagger.jaxrs.listing.ApiListingResource;
-import io.swagger.jaxrs.listing.SwaggerSerializers;
-import java.util.HashSet;
-import java.util.Set;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Consumes;
@@ -37,19 +33,6 @@ public class ClienteWS extends Application {
         conf.setSchemes(new String[] { "http" });
         conf.setScan(true);
     }
-    
-    @Override
-  public Set<Class<?>> getClasses() {
-      Set<Class<?>> resources = new HashSet<>();
-      //resources.add(ClienteWS.class);
-      resources.add(JacksonJavaTimeConfiguration.class);
-      resources.add(PagamentoResource.class);
-       
-      //classes do swagger...
-      resources.add(ApiListingResource.class);
-      resources.add(SwaggerSerializers.class);
-      return resources;
-   }
             
     @GET
     @Produces(MediaType.APPLICATION_JSON)
