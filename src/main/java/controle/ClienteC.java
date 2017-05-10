@@ -1,6 +1,9 @@
 package controle;
 
+import com.auth0.jwt.JWT;
+import com.auth0.jwt.algorithms.Algorithm;
 import com.google.gson.Gson;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 import modelo.ClienteBD;
 import objeto.Cliente;
@@ -8,16 +11,17 @@ import objeto.Cliente;
 
 public class ClienteC {
 
-    public String loginCliente(String cliente) {
+    public String loginCliente(String cliente) throws IllegalArgumentException, UnsupportedEncodingException {
         Gson g = new Gson();
         Cliente cli = (Cliente) g.fromJson(cliente, Cliente.class);
         ClienteBD cbd = new ClienteBD();
         boolean result = cbd.loginCliente(cli);
         
         if (result){
-            return "logado";
+            Algorithm algorithm = Algorithm.HMAC256("secret");
+            return JWT.create().withIssuer(cliente).sign(algorithm);
         }else{
-            return "invalido";
+            return "Login inválido!";
         }
     }
     

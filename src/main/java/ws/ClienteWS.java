@@ -3,6 +3,7 @@ package ws;
 import controle.ClienteC;
 import io.swagger.annotations.Api;
 import io.swagger.jaxrs.config.BeanConfig;
+import java.io.UnsupportedEncodingException;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Consumes;
@@ -75,7 +76,7 @@ public class ClienteWS extends Application {
     @POST
     @Consumes(MediaType.APPLICATION_JSON) //consome um json
     @Path("/login/")
-    public String loginCliente(String cliente){
+    public String loginCliente(String cliente) throws IllegalArgumentException, UnsupportedEncodingException{
         ClienteC cc = new ClienteC();
         return cc.loginCliente(cliente);
     }
