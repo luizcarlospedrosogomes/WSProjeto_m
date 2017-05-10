@@ -76,7 +76,7 @@ public class ClienteWS extends Application {
     @POST
     @Consumes(MediaType.APPLICATION_JSON) //consome um json
     @Path("/login/")
-    public String loginCliente(String cliente) throws IllegalArgumentException, UnsupportedEncodingException{
+    public String loginCliente(String cliente){
         ClienteC cc = new ClienteC();
         return cc.loginCliente(cliente);
     }
