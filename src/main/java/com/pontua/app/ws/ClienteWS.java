@@ -1,3 +1,4 @@
+
 package com.pontua.app.ws;
 
 import controle.ClienteC;
@@ -76,7 +77,7 @@ public class ClienteWS extends Application {
     @POST
     @Consumes(MediaType.APPLICATION_JSON) //consome um json
     @Path("pontua/login")
-    public String loginCliente(String cliente){
+    public String loginCliente(String cliente) throws IllegalArgumentException, UnsupportedEncodingException{
         ClienteC cc = new ClienteC();
         return cc.loginCliente(cliente);
     }
@@ -99,3 +100,4 @@ public class ClienteWS extends Application {
     }
     
 }
+

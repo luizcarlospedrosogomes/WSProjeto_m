@@ -1,8 +1,10 @@
 package controle;
 
 import com.google.gson.Gson;
+import com.pontua.modelo.ClienteBD;
+
 import java.util.List;
-import modelo.ClienteBD;
+
 import objeto.Cliente;
 
 public class teste {

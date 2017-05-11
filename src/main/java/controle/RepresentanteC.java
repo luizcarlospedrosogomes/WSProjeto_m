@@ -1,8 +1,10 @@
 package controle;
 
 import com.google.gson.Gson;
+import com.pontua.modelo.RepresentanteBD;
+
 import java.util.List;
-import modelo.RepresentanteBD;
+
 import objeto.Representante;
 
 
