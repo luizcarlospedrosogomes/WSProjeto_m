@@ -7,24 +7,24 @@ import java.sql.Date;
 public class Cliente {
     
     private int ID;
-    private String Nome;
+    private String nome;
     private String CPF;
-    private String Email;
+    private String email;
     private Date Nascimento;
     private String Sexo;
-    private String Senha;
+    private String senha;
 
     public Cliente() {
     }
 
-    public Cliente(int ID, String Nome, String CPF, String Email, Date Nascimento, String Sexo, String Senha) {
+    public Cliente(int ID, String nome, String CPF, String Email, Date Nascimento, String Sexo, String senha) {
         this.ID = ID;
-        this.Nome = Nome;
+        this.nome = nome;
         this.CPF = CPF;
-        this.Email = Email;
+        this.email = email;
         this.Nascimento = Nascimento;
         this.Sexo = Sexo;
-        this.Senha = Senha;
+        this.senha = senha;
     }
     
     public int getID() {
@@ -36,11 +36,11 @@ public class Cliente {
     }
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
-    public void setNome(String Nome) {
-        this.Nome = Nome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getCPF() {
@@ -52,11 +52,11 @@ public class Cliente {
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public Date getNascimento() {
@@ -76,11 +76,11 @@ public class Cliente {
     }
 
     public String getSenha() {
-        return Senha;
+        return senha;
     }
 
     public void setSenha(String Senha) {
-        this.Senha = Senha;
+        this.senha = Senha;
     }
     
 }

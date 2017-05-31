@@ -1,14 +1,15 @@
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\objeto\Representante.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\ws\testeTkn.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\controle\RepresentanteC.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\controle\ClienteC.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\modelo\Conexao.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\objeto\Promocao.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\ws\RepresentanteWS.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\ws\ApplicationConfig.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\modelo\ClienteBD.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\modelo\RepresentanteBD.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\objeto\Cliente.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\controle\teste.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\ws\ClienteWS.java
-C:\Users\Karpa\Documents\GitHub\WSProjeto_m\src\main\java\objeto\Premio.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\com\pontua\modelo\RepresentanteBD.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\com\pontua\app\ws\RepresentanteWS.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\com\pontua\app\ws\testeTkn.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\objeto\Representante.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\com\pontua\app\ws\ApplicationConfig.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\com\pontua\app\ws\ClienteWS.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\controle\ClienteC.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\objeto\Cliente.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\controle\RepresentanteC.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\com\pontua\modelo\Conexao.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\objeto\Premio.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\controle\teste.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\com\pontua\app\util\CORSFilter.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\objeto\Promocao.java
+D:\programacao\projetos II\WSProjeto_m\src\main\java\com\pontua\modelo\ClienteBD.java

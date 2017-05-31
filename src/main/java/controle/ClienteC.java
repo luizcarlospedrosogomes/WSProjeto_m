@@ -12,18 +12,21 @@ import objeto.Cliente;
 
 
 public class ClienteC {
-
+	private Cliente cli;
+	
     public String loginCliente(String cliente) throws IllegalArgumentException, UnsupportedEncodingException {
-        Gson g = new Gson();
-        Cliente cli = (Cliente) g.fromJson(cliente, Cliente.class);
+        System.out.println("DADOS PARA SEREM CONVERTIDOS EM JSON: "+  cliente);
+    	
+        
+        this.cli = new Gson().fromJson(cliente, Cliente.class);
         ClienteBD cbd = new ClienteBD();
-        boolean result = cbd.loginCliente(cli);
+        boolean result = cbd.loginCliente(this.cli);
         
         if (result){
             Algorithm algorithm = Algorithm.HMAC256("secret");
             return JWT.create().withIssuer(cliente).sign(algorithm);
         }else{
-            return "Login inválido!";
+            return "";
         }
     }
     

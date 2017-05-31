@@ -128,6 +128,7 @@ public class ClienteBD {
     
     public boolean loginCliente(Cliente c){
         try {
+        	System.out.println("BUSCANDO NO BANCO POR : EMAIL :" + c.getEmail()+" SENHA "+ c.getSenha());
             sql = "SELECT * FROM cliente WHERE email = ? AND senha = ?;";
             con = Conexao.conectar();
             pst = con.prepareStatement(sql);
